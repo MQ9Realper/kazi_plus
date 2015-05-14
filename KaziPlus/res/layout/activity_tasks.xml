@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kaziplus.kaziplus.TasksActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select employee name"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#005500" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/spinner_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_project_name"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#005500" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/action_about" />
+
+    <EditText
+        android:id="@+id/txt_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/task_name"
+        android:labelFor="@+id/txt_task_name"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/comments"
+        android:labelFor="@+id/txt_comment"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/txt_date_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_done"
+        android:labelFor="@+id/txt_date_done"
+        android:ems="10" 
+        android:inputType="date"
+        android:onClick="dateDonePicker"/>
+
+    <EditText
+        android:id="@+id/txt_time_taken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/time_taken"
+        android:labelFor="@+id/txt_time_taken"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn_add_task_done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:text="@string/add_task"
+        android:onClick="addTask" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kaziplus.kaziplus.ProjectsActivity" >
+
+    <EditText
+        android:id="@+id/txt_project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_project_name"
+        android:labelFor="@+id/txt_project_name"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txt_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_start_date"
+        android:labelFor="@+id/txt_start_dates"
+        android:ems="10"
+        android:inputType="date"
+        android:onClick="showDatePicker" />
+
+    <EditText
+        android:id="@+id/txt_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_end_date"
+        android:labelFor="@+id/txt_end_date"
+        android:ems="10"
+        android:inputType="date" 
+        android:onClick="showEndDatePicker"/>
+
+    <Button
+        android:id="@+id/btn_add_project"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:text="@string/hint_add_project" 
+        android:onClick="addProject"/>
+
+</LinearLayout>
